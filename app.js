@@ -1,10 +1,6 @@
-let menuList = document.getElementById("menuList");
-menuList.style.maxHeight = "0px";
+const sidebar = document.querySelector(".sidebar");
+const navLink = document.querySelector(".nav__link");
 
-function toggleMenu() {
-  if (menuList.style.maxHeight == "0px") {
-    menuList.style.maxHeight = "300px";
-  } else {
-    menuList.style.maxHeight = "0px";
-  }
-}
+sidebar.addEventListener("click", () => {
+  navLink.classList.toggle("hide");
+});

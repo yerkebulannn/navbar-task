@@ -2,25 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
     <link rel="stylesheet" href="style.css" />
+    <title>responsive navbar</title>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <h1>Logo</h1>
-      </div>
-      <ul id="menuList">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Product</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-      <div class="menu-icon">
-        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-      </div>
-    </nav>
+    <header>
+      <nav class="nav">
+        <a href="/" class="logo">logo</a>
+
+        <div class="sidebar">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+
+        <div class="nav__link hide">
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a href="#">blog</a>
+        </div>
+      </nav>
+    </header>
   </body>
+
+  <script src="./app.js"></script>
 </html>
